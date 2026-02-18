@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Marileisi Arias visual artist
+    </title>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Cinzel';font-size: 22px;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+
+
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 10px;
+            margin-top: 60px;
+        }
+
+        /* Menú lateral */
+        .sidebar {
+            
+            width: 20%;
+            padding: 20px;
+            margin-top: 180px;
+        }
+
+        .sidebar h1 {
+            font-size:medium;
+            margin-bottom: 30px;
+            font-family: 'Cinzel';font-size: 22px;
+            font-weight: 600;
+        }
+         
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px ;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .sidebar a:hover {
+            font-weight:lighter;
+        }
+
+        .sidebar p {
+        margin-top: 35px;
+      font-size: 11px;
+      color:dimgrey;
+
+        }
+
+ .social-icons  {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+    margin: 0px;
+    
+}
+
+.social-icons a{
+margin: 2px;
+
+}
+
+  /* Contenido principal */
+  .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+
+        /* Galería */
+        .gallery {
+            display: flex;
+            flex-direction: row;
+           overflow: auto;
+            flex-wrap: wrap;
+            gap: 20px; /* Espacio entre imágenes */
+            padding: 10px;
+            max-width: 200%;
+            margin-top: 10px;
+
+
+        }
+
+        .gallery figure {
+    margin: 0;
+    
+    text-align: center;
+}
+
+        .gallery img {
+            width: 350px;
+            height: 400px;;
+            object-fit: cover;
+            border-radius: 0px;
+            
+
+        }
+
+        .gallery figcaption {
+            
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+            
+        }
+
+    /* Estilos para secciones */
+    section h2 {
+            margin-bottom: 15px;
+        }
+
+        form {
+            
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+        }
+
+        input, textarea, button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+ 
+        #contacto input, 
+#contacto textarea, 
+#contacto button {
+    width: 100%;                  /* Cada campo ocupa todo el ancho */
+    font-size: 14px;              /* Aumenta el tamaño del texto */
+    padding: 10px;                /* Espacio interno de los campos */
+    margin-bottom: 10px;          /* Espaciado entre campos */
+}
+
+    </style>
+</head>
+<body>
+  
+
+<!-- Contenedor Principal -->
+<div class="container">
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <ul>
+        <h1>MARILEISI  ARIAS</h1>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+      <li><a href="#cv" class="nav-link">CV</a></li>
+       <li><a href="#contacto" class="nav-link">Contact</a></li>
+    </ul>
+
+        <p>© Marileisi Arias, 2025.</p>
+ 
+          
+            
+
+             <div class="social-icons">
+                
+        <a href="https://www.instagram.com/marileisiariasart?igsh=dHBqbTRkNmd2OTIw"><img src="instagram.ico" alt="instagram" width="19px"></a>
+        <a href="#"><img src="gmail_icon-icons.com_59877.ico" alt="gmail" width="19px"  ></a>
+        <a href="#"><img src="1492718748-share_83604.ico" alt="share" width="19px"></a>
+
+    </div>
+            </div>
+
+
+        <!-- Galería -->
+        <div class="content">
+            <section id="home" class="active">
+                
+                <div class="gallery">
+
+            <figure>
+                <img src="imagenes/retrato bowie 2.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/retrato bowie.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/retrato inventado.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/retrato señor zona colonial.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/pintura.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/retrato 55.jpg" alt="sin titulo">
+                <figcaption>Sin título</figcaption>
+            </figure>
+        </div>
+            </section>
+
+  <!-- Sección CV -->
+  <section id="cv">
+    <h2>Currículum Vitae</h2>
+    <p>Aquí va tu información del CV...</p>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto">
+   
+    <!-- Contenedor Flex para imagen y formulario -->
+    <div style="display: flex; gap: 100px; align-items: flex-start;">
+        <!-- Imagen -->
+        <img src="imagenes/PINTURA 2.jpg" alt="imagen formulario" style="width: 190px; height: auto; object-fit: cover;  border-radius: 5px; margin-top: 150px; margin-left: 50px;">
+        
+        <!-- Formulario -->
+        <form style=" flex: 1; max-width: 500px; padding: 10px; font-size: 16px; margin-left: 20px; margin-top: 50px;">
+            <h2>Contact us</h2>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Script -->
+<script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+    
+            // Ocultar todas las secciones
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+    
+            // Mostrar la sección correspondiente
+            const targetId = this.getAttribute('href').substring(1);
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+    </script>
+    </body>
+    </html>
+
+
+
+
+    
+  
